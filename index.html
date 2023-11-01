@@ -207,10 +207,18 @@
 	<script src="javascript/anime.js"></script>
 	<script src="javascript/myscript.js"></script>
 	<iframe src="nhacnen.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+	 <script>
+      function addEvent(){
+         document.body.addEventListener("click", play)
+       }
+      function play() {
+        var audio = document.getElementById("player");
+        audio.play();
+      }
 
 	<!-- Phần nhạc -->
 	<!-- Bạn tải 1 bài nhạc rồi copy vào thư mục music và thay đổi tên bài hát ở bên dưới -->
-	<audio id="player" controls autoplay loop>
+	<audio id="player" autoplay>
 		<source src="nhacnen.mp3" type="audio/mp3">
 	</audio>
 </body>
